@@ -1,0 +1,23 @@
+{
+    "name": "Velog Highlighter",
+    "description": "Velog 글의 텍스트와 배경색을 변경하는 크롬 확장 프로그램입니다.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": ""
+    },
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://velog.io/*"], 
+        "js": ["content.js"] 
+      }
+    ]
+  }
