@@ -11,9 +11,9 @@
       "activeTab",
       "scripting"
     ],
-    "background": {
-      "service_worker": "background.js"
-    },
+    "host_permissions": [
+        "https://velog.io/*"
+    ],
     "content_scripts": [
       {
         "matches": ["https://velog.io/*"], 
